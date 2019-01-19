@@ -50,7 +50,7 @@ class Stats {
 
 const formatter = new Map([
   ["ERR_ASSERTION", error => `assersion error (${error.actual} ${error.operator} ${error.expected})`],
-  ["unknown", () => "unknown error"]
+  ["unknown", error => error + ""]
 ]);
 
 class Result {
