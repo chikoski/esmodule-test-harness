@@ -103,7 +103,7 @@ class Session {
 export class Harness {
   constructor() {
     this.mAll = [];
-    this.mResult = [];
+    this.mResult = null;
   }
   get all() {
     return this.mAll;
