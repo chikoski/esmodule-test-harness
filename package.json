@@ -1,0 +1,14 @@
+{
+  "name": "test-harness",
+  "version": "0.1.0",
+  "description": "A test harness for ecma module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "N.Shimizu <chikoski@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "power-assert": "^1.6.1"
+  }
+}
