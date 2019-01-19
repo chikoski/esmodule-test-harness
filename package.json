@@ -10,5 +10,17 @@
   "license": "MIT",
   "dependencies": {
     "power-assert": "^1.6.1"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chikoski/esmodule-test-harness.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chikoski/esmodule-test-harness/issues"
+  },
+  "homepage": "https://github.com/chikoski/esmodule-test-harness#readme"
 }
