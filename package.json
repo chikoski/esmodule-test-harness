@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "A test harness for ecma module",
   "main": "index.js",
+  "bin": {
+    "test-harness": "./bin/test-harness.mjs"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
