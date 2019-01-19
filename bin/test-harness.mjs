@@ -21,21 +21,18 @@ class Runtime {
 const DEFAULT = "./test/index.mjs";
 
 Promise.all([
+  import("../index.mjs"),
   import("path")
-]).then(([path]) => {
+]).then(([Harness, path]) => {
   function expandPath(fragment) {
     if (fragment.charAt(0) === "/") {
       return path;
     }
     return path.join(process.cwd(), fragment);
   }
-  function main(args) {
-    const entryPoint = args.length > 2 ? args[2] : DEFAULT;
-    import("../index.mjs")
-      .then(mod => new Runtime(mod.Harness))
-      .then(runtime => {
-        runtime.start(expandPath(entryPoint));
-      }).catch(e => console.log(e));
-  }
-  main(process.argv);
+
+  const args = process.argv;
+  const entryPoint = args.length > 2 ? args[2] : DEFAULT;
+  const runtime = new Runtime(Harness.Harness);
+  runtime.start(expandPath(entryPoint));
 });
