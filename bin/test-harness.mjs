@@ -1,7 +1,7 @@
 #!/usr/bin/env node --experimental-modules
 
-import { Runtime } from "../lib/runtime.mjs"
-import path from "path"
+import { Runtime } from "../lib/runtime.mjs";
+import path from "path";
 
 const DEFAULT = "./test/index.mjs";
 function expandPath(fragment) {
