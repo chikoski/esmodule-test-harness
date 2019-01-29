@@ -4,10 +4,10 @@
   "description": "A test harness for ecma module",
   "main": "index.js",
   "bin": {
-    "test-harness": "./bin/test-harness"
+    "test-harness": "./bin/test-harness.mjs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./bin/test-harness.mjs test/index.mjs"
   },
   "author": "N.Shimizu <chikoski@gmail.com>",
   "license": "MIT",
